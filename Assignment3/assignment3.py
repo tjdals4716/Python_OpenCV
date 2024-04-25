@@ -1,6 +1,6 @@
-'''
-# 1. Copy of Lena-Gaussian-noise.jpg 이미지와 salt pepper noise.bmp 이미지에 Average filter의 사이즈를 3 by 3으로 설정 후 노이즈 제거 결과
 
+# 1. Copy of Lena-Gaussian-noise.jpg 이미지와 salt pepper noise.bmp 이미지에 Average filter의 사이즈를 3 by 3으로 설정 후 노이즈 제거 결과
+'''
 import cv2 as cv
 import numpy as np
 
@@ -32,6 +32,9 @@ salt_pepper_noise_filtered = apply_average_filter(salt_pepper_noise_img, 3)
 # 결과 이미지 표시
 cv.imshow('Filtered Lena Gaussian Noise', lena_gaussian_noise_filtered)
 cv.imshow('Filtered Salt Pepper Noise', salt_pepper_noise_filtered)
+
+cv.imshow('a', lena_gaussian_noise_img)
+cv.imshow('b', salt_pepper_noise_img)
 
 # 이미지를 화면에 표시
 cv.waitKey(0)
@@ -538,7 +541,7 @@ cv.destroyAllWindows()
 
 
 # 2. Copy of Lena-Gaussian-noise.jpg 이미지와 salt pepper noise.bmp 이미지에 대해 필터의 사이즈는 5 by 5로 고정 후 Gaussian filter(분산 = 2.0) 적용 결과 이미지
-'''
+
 import cv2 as cv
 import numpy as np
 
@@ -571,7 +574,7 @@ cv.imshow('Filtered Salt Pepper Noise', salt_pepper_noise_filtered)
 # 이미지를 화면에 표시
 cv.waitKey(0)
 cv.destroyAllWindows()
-'''
+
 
 
 
@@ -655,7 +658,7 @@ cv.destroyAllWindows()
 
 
 # 2. Copy of Lena-Gaussian-noise.jpg 이미지와 salt pepper noise.bmp 이미지에 대해 필터의 사이즈는 5 by 5로 고정 후 Gaussian filter(분산 = 4.0) 적용 결과 이미지
-'''
+
 import cv2 as cv
 
 # Copy of Lena-Gaussian-noise.jpg 이미지 읽기
@@ -687,7 +690,7 @@ cv.imshow('Filtered Salt Pepper Noise', salt_pepper_noise_filtered)
 # 이미지를 화면에 표시
 cv.waitKey(0)
 cv.destroyAllWindows()
-'''
+
 
 
 
@@ -771,7 +774,7 @@ cv.destroyAllWindows()
 
 
 # 2. Copy of Lena-Gaussian-noise.jpg 이미지와 salt pepper noise.bmp 이미지에 대해 필터의 사이즈는 5 by 5로 고정 후 Gaussian filter(분산 = 7.0) 적용 결과 이미지
-'''
+
 import cv2 as cv
 
 # Copy of Lena-Gaussian-noise.jpg 이미지 읽기
@@ -803,7 +806,7 @@ cv.imshow('Filtered Salt Pepper Noise', salt_pepper_noise_filtered)
 # 이미지를 화면에 표시
 cv.waitKey(0)
 cv.destroyAllWindows()
-'''
+
 
 
 
@@ -886,7 +889,7 @@ cv.destroyAllWindows()
 
 
 # 2. Copy of Lena-Gaussian-noise.jpg 이미지와 salt pepper noise.bmp 이미지에 대해 필터의 사이즈는 5 by 5로 고정 후 Gaussian filter(분산 = 10.0) 적용 결과 이미지
-'''
+
 import cv2 as cv
 
 # Copy of Lena-Gaussian-noise.jpg 이미지 읽기
@@ -918,12 +921,12 @@ cv.imshow('Filtered Salt Pepper Noise', salt_pepper_noise_filtered)
 # 이미지를 화면에 표시
 cv.waitKey(0)
 cv.destroyAllWindows()
-'''
+
 
 
 
 # 3. 로버트 크로스 필터를 Copy of Lena-Gaussian-noise.jpg 이미지와 salt pepper noise.bmp 이미지에 모두 적용한 결과와 이미지 출력
-'''
+
 import cv2 as cv
 import numpy as np
 
@@ -932,7 +935,7 @@ roberts_cross_v = np.array([[1, 0], [0, -1]])
 roberts_cross_h = np.array([[0, 1], [-1, 0]])
 
 # Copy of Lena-Gaussian-noise.jpg 이미지 읽기
-lena_gaussian_noise_img = cv.imread('Copy of Lena-Gaussian-noise.jpg')
+lena_gaussian_noise_img = cv.imread('meme.png')
 
 # salt pepper noise.bmp 이미지 읽기
 salt_pepper_noise_img = cv.imread('salt pepper noise.bmp')
@@ -963,17 +966,17 @@ cv.imshow('Roberts Cross Filtered Salt Pepper Noise', salt_pepper_noise_filtered
 # 이미지를 화면에 표시
 cv.waitKey(0)
 cv.destroyAllWindows()
-'''
+
 
 
 
 # 3. 소벨 필터를 Copy of Lena-Gaussian-noise.jpg 이미지와 salt pepper noise.bmp 이미지에 모두 적용한 결과와 이미지 출력
-'''
+
 import cv2 as cv
 import numpy as np
 
 # Copy of Lena-Gaussian-noise.jpg 이미지 읽기
-lena_gaussian_noise_img = cv.imread('Copy of Lena-Gaussian-noise.jpg')
+lena_gaussian_noise_img = cv.imread('meme.png')
 
 # salt pepper noise.bmp 이미지 읽기
 salt_pepper_noise_img = cv.imread('salt pepper noise.bmp')
@@ -1004,17 +1007,17 @@ cv.imshow('Sobel Filtered Salt Pepper Noise', salt_pepper_noise_filtered)
 # 이미지를 화면에 표시
 cv.waitKey(0)
 cv.destroyAllWindows()
-'''
+
 
 
 
 # 3. 프리윗 필터를 Copy of Lena-Gaussian-noise.jpg 이미지와 salt pepper noise.bmp 이미지에 모두 적용한 결과와 이미지 출력
-'''
+
 import cv2 as cv
 import numpy as np
 
 # Copy of Lena-Gaussian-noise.jpg 이미지 읽기
-lena_gaussian_noise_img = cv.imread('Copy of Lena-Gaussian-noise.jpg')
+lena_gaussian_noise_img = cv.imread('meme.png')
 
 # salt pepper noise.bmp 이미지 읽기
 salt_pepper_noise_img = cv.imread('salt pepper noise.bmp')
@@ -1045,16 +1048,16 @@ cv.imshow('Prewitt Filtered Salt Pepper Noise', salt_pepper_noise_filtered)
 # 이미지를 화면에 표시
 cv.waitKey(0)
 cv.destroyAllWindows()
-'''
+
 
 
 
 # 3. 캐니 필터를 Copy of Lena-Gaussian-noise.jpg 이미지와 salt pepper noise.bmp 이미지에 모두 적용한 결과와 이미지 출력
-'''
+
 import cv2 as cv
 
 # Copy of Lena-Gaussian-noise.jpg 이미지 읽기
-lena_gaussian_noise_img = cv.imread('Copy of Lena-Gaussian-noise.jpg')
+lena_gaussian_noise_img = cv.imread('meme.png')
 
 # salt pepper noise.bmp 이미지 읽기
 salt_pepper_noise_img = cv.imread('salt pepper noise.bmp')
@@ -1081,16 +1084,16 @@ cv.imshow('Canny Filtered Salt Pepper Noise', salt_pepper_noise_filtered)
 # 이미지를 화면에 표시
 cv.waitKey(0)
 cv.destroyAllWindows()
-'''
+
 
 
 
 # 3. 라플라시안 필터를 Copy of Lena-Gaussian-noise.jpg 이미지와 salt pepper noise.bmp 이미지에 모두 적용한 결과와 이미지 출력
-'''
+
 import cv2 as cv
 
 # Copy of Lena-Gaussian-noise.jpg 이미지 읽기
-lena_gaussian_noise_img = cv.imread('Copy of Lena-Gaussian-noise.jpg')
+lena_gaussian_noise_img = cv.imread('meme.png')
 
 # salt pepper noise.bmp 이미지 읽기
 salt_pepper_noise_img = cv.imread('salt pepper noise.bmp')
@@ -1121,7 +1124,7 @@ cv.imshow('Laplacian Filtered Salt Pepper Noise', salt_pepper_noise_filtered)
 # 이미지를 화면에 표시
 cv.waitKey(0)
 cv.destroyAllWindows()
-'''
+
 
 
 
@@ -1130,7 +1133,7 @@ cv.destroyAllWindows()
 import cv2 as cv
 
 # Copy of Lena-Gaussian-noise.jpg 이미지 읽기
-lena_gaussian_noise_img = cv.imread('Copy of Lena-Gaussian-noise.jpg')
+lena_gaussian_noise_img = cv.imread('meme.png')
 
 # salt pepper noise.bmp 이미지 읽기
 salt_pepper_noise_img = cv.imread('salt pepper noise.bmp')

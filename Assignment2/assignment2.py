@@ -1,5 +1,5 @@
 # 교재 2-2 코드
-
+'''
 import cv2 as cv 
 import sys
 
@@ -13,7 +13,7 @@ cv.imshow('Image Display', img)
 
 cv.waitKey()
 cv.destroyAllWindows()
-
+'''
 
 
 
@@ -78,7 +78,7 @@ cv.destroyAllWindows()
 import cv2 as cv
 
 # 이미지 파일을 읽어옵니다.
-img = cv.imread('camera.bmp')
+img = cv.imread('lena.jpg')
 
 # 이미지가 제대로 읽어졌는지 확인합니다.
 if img is None:
@@ -144,12 +144,12 @@ cv.destroyAllWindows()
 
 
 
-# 과제 1-2 코드
+# 과제 1-2 코드 (RGB 이미지 HSV 이미지로 변환 코드)
 '''
 import cv2 as cv
 
 # 이미지 파일 읽기
-img = cv.imread('flower.bmp')
+img = cv.imread('camera.bmp')
 
 # 이미지가 제대로 읽어졌는지 확인
 if img is None:
@@ -212,7 +212,7 @@ cv.destroyAllWindows()
 import cv2 as cv
 
 # 첫 번째 이미지 읽기
-img1 = cv.imread('girl.jpg')
+img1 = cv.imread('lena.jpg')
 
 # 두 번째 이미지 읽기
 img2 = cv.imread('butterfly.bmp')
@@ -281,7 +281,7 @@ cv.destroyAllWindows()
 
 
 
-# 과제 3-1 코드
+# 과제 3-1 코드 (전역 임계값 적용)
 '''
 import cv2 as cv
 
@@ -318,7 +318,7 @@ cv.destroyAllWindows()
 
 
 
-# 과제 3-2 코드
+# 과제 3-2 코드 (적응적 임계값 적용)
 '''
 import cv2 as cv
 
@@ -343,6 +343,9 @@ adaptive_thresh2 = cv.adaptiveThreshold(gray_img2, 255, cv.ADAPTIVE_THRESH_GAUSS
 cv.imshow('Adaptive Threshold Lena', adaptive_thresh1)
 cv.imshow('Adaptive Threshold Mandrill', adaptive_thresh2)
 
+cv.imshow('Lena Original', img1)
+cv.imshow('Mandrill Original', img2)
+
 # 이미지를 화면에 표시
 cv.waitKey(0)
 cv.destroyAllWindows()
@@ -350,7 +353,7 @@ cv.destroyAllWindows()
 
 
 
-# 과제 4-1 코드
+# 과제 4-1 코드 (히스토그램 스트레칭)
 '''
 import cv2 as cv
 import numpy as np
@@ -398,7 +401,7 @@ cv.destroyAllWindows()
 
 
 
-# 과제 4-2 코드
+# 과제 4-2 코드 (히스토그램 평활화)
 
 import cv2 as cv
 
