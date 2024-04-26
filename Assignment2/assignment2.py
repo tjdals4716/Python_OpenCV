@@ -354,7 +354,7 @@ cv.destroyAllWindows()
 
 
 # 과제 4-1 코드 (히스토그램 스트레칭)
-'''
+
 import cv2 as cv
 import numpy as np
 
@@ -397,7 +397,7 @@ cv.imshow('Stretching Mandrill', mandrill_stretched)
 # 이미지를 화면에 표시
 cv.waitKey(0)
 cv.destroyAllWindows()
-'''
+
 
 
 
